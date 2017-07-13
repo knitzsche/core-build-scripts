@@ -16,7 +16,7 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ] || [ "$1" == "h" ] || [ "$1" == "hel
     help
 fi
 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 4 ]; then
     help
     exit 1
 fi
