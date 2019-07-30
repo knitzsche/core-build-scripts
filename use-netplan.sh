@@ -10,8 +10,8 @@ help() {
     echo "This is typically used with console-conf disabled"
     echo ""
     echo "Usage: $0 IMG NEPLANFILE"
-    echo "    IMG is the .img file created by ubuntu-image"
     echo "    NEPLANFILE is a path netplan a file"
+    echo "    IMG is the .img file created by ubuntu-image"
     exit 
 }
 
@@ -30,8 +30,8 @@ if [ "$#" -ne 2 ]; then
 fi
 
 
-image_name=$1
-netplan_path=$2
+netplan_path=$1
+image_name=$2
 
 netplan=$(cat $netplan_path)
 
