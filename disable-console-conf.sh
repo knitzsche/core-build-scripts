@@ -21,7 +21,8 @@ if [ "$#" -ne 1 ]; then
     echo "ERROR. you must provide the image file as an arg"
     exit 1
 fi
-
+echo "DEPRECATED: use ubuntu-image --disable-console-conf instead"
+exit
 image_name=$1
 trap finish EXIT 
 
